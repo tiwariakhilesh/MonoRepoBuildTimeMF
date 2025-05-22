@@ -14,10 +14,10 @@ import {
   DialogContent,
   DialogTitle,
 } from '@mui/material';
-type TableItemsState = {
-  id: number;
-  name: string;
-  email: string;
+type TableItemsState ={
+    id: number;
+    name:string;
+    email:string;
 }
 
 export const PolicyManagement = () => {
@@ -89,7 +89,7 @@ export const PolicyManagement = () => {
 
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={handleCreate} style={{ margin: "30px" }}>
+      <Button variant="contained" color="primary" onClick={handleCreate} style={{margin:"30px"}}>
         Create
       </Button>
       <TableContainer component={Paper}>

@@ -2,9 +2,10 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import "./style.css";
-import { Header, Counter, IframeWrapper } from "@repo/ui";
+import { Header, IframeWrapper } from "@repo/ui";
 import { PolicyManagement } from "@repo/policymanagement"
 import NavBar from "./Navbar";
+import { CaseManagement } from "@repo/casemanagement";
 
 const App = () => (
   <BrowserRouter>
@@ -14,7 +15,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Header title="POC App" />} />
       <Route path="/PolicyManagement" element={<PolicyManagement />} />
-      <Route path="/CaseManagement" element={<Counter />} />
+      <Route path="/CaseManagement" element={<CaseManagement />} />
       <Route path="/oldFeature" element={<IframeWrapper />} />
     </Routes>
 
