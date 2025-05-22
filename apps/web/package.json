@@ -10,10 +10,11 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
+    "@repo/policymanagement": "*",
     "@repo/ui": "*",
-    "@repo/policymanagement":"*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
