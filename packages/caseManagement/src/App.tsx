@@ -76,13 +76,13 @@ export const CaseManagement: React.FC = () => {
   };
 
   return (
-    <section style={{width:"60vw"}}>
-    <h1>Incidents Table</h1>
+    <section style={{width:"60vw", color: '#000'}}>
+    <h1>Incident Table</h1>
    
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
-          <TableRow>
+          <TableRow style={{background:"rgb(147 155 159)"}}>
             {columns.map((column) => (
               <TableCell key={column.id}>
                 <TableSortLabel
