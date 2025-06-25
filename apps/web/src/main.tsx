@@ -16,6 +16,7 @@ const App = () => (
       <Route path="/" element={<PolicyManagement />} />
       <Route path="/CaseManagement" element={<CaseManagement />} />
       <Route path="/oldFeature" element={<IframeWrapper />} />
+      <Route path="/PolicyManagement" element={<PolicyManagement />} />
     </Routes>
 
   </BrowserRouter>
